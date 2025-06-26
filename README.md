@@ -50,6 +50,21 @@
 2. 请求重新索引主页面
 3. 监控索引状态变化
 
+### Sitemap问题修复（2025-01-12 更新）
+
+**问题**：Google Search Console显示"Sitemap 是 HTML"错误
+
+**解决方案**：
+1. 更新了sitemap.xml，添加了更完整的XML Schema声明
+2. 创建了.htaccess文件，确保：
+   - XML文件以正确的MIME类型(`application/xml`)提供服务
+   - 启用了Gzip压缩优化性能
+   - 设置了合适的缓存策略
+
+**验证方法**：
+- 直接访问 `https://ailearnhub.app/sitemap.xml` 确认显示为XML格式
+- 在Google Search Console中重新测试sitemap
+
 ## 后续计划
 
 -   丰富首页内容。
