@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="专为编程小白打造的AI学习工具集合，包含AI编程助手、在线编程环境、学习资源、开发框架等61个精选网站，让AI成为你的编程导师。">
+    <meta name="keywords" content="AI编程,编程学习,ChatGPT,GitHub Copilot,在线编程,前端开发,学习导航,编程工具">
+    <meta name="author" content="AI编程学习导航">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://aiLearnhub.APP/">
+    <meta property="og:title" content="AI编程学习导航 - 编程小白的学习宝典">
+    <meta property="og:description" content="专为编程小白打造的AI学习工具集合，包含61个精选网站，让AI成为你的编程导师。">
+    <meta property="og:image" content="https://aiLearnhub.APP/og-image.jpg">
+    
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://aiLearnhub.APP/">
+    <meta property="twitter:title" content="AI编程学习导航 - 编程小白的学习宝典">
+    <meta property="twitter:description" content="专为编程小白打造的AI学习工具集合，包含61个精选网站，让AI成为你的编程导师。">
+    <meta property="twitter:image" content="https://aiLearnhub.APP/og-image.jpg">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://aiLearnhub.APP/">
+    
+    <!-- Favicons -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="/android-chrome-512x512.png">
+    
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="theme-color" content="#007AFF">
+    <meta name="msapplication-TileColor" content="#007AFF">
+    
+    <title>AI编程学习导航 - 编程小白的学习宝典</title>
+    <!-- 网站图标 -->
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgNjQgNjQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiB4MT0iMCUiIHkxPSIwJSIgeDI9IjEwMCUiIHkyPSIxMDAlIj48c3RvcCBvZmZzZXQ9IjAlIiBzdHlsZT0ic3RvcC1jb2xvcjojNjY3ZWVhO3N0b3Atb3BhY2l0eToxIiAvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3R5bGU9InN0b3AtY29sb3I6Izc2NGJhMjtzdG9wLW9wYWNpdHk6MSIgLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHJ4PSIxMiIgZmlsbD0idXJsKCNncmFkKSIvPjx0ZXh0IHg9IjMyIiB5PSI0MiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjMyIiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0id2hpdGUiPkFJPC90ZXh0PjxjaXJjbGUgY3g9IjQ4IiBjeT0iMTYiIHI9IjQiIGZpbGw9IndoaXRlIiBvcGFjaXR5PSIwLjgiLz48Y2lyY2xlIGN4PSIxNiIgY3k9IjQ4IiByPSIzIiBmaWxsPSJ3aGl0ZSIgb3BhY2l0eT0iMC42Ii8+PC9zdmc+">
+<link rel="shortcut icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgNjQgNjQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiB4MT0iMCUiIHkxPSIwJSIgeDI9IjEwMCUiIHkyPSIxMDAlIj48c3RvcCBvZmZzZXQ9IjAlIiBzdHlsZT0ic3RvcC1jb2xvcjojNjY3ZWVhO3N0b3Atb3BhY2l0eToxIiAvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3R5bGU9InN0b3AtY29sb3I6Izc2NGJhMjtzdG9wLW9wYWNpdHk6MSIgLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHJ4PSIxMiIgZmlsbD0idXJsKCNncmFkKSIvPjx0ZXh0IHg9IjMyIiB5PSI0MiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjMyIiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0id2hpdZSI+QUk8L3RleHQ+PGNpcmNsZSBjeD0iNDgiIGN5PSIxNiIgcj0iNCIgZmlsbD0id2hpdGUiIG9wYWNpdHk9IjAuOCIvPjxjaXJjbGUgY3g9IjE2IiBjeT0iNDgiIHI9IjMiIGZpbGw9IndoaXRlIiBvcGFjaXR5PSIwLjYiLz48L3N2Zz4=">
+<!-- Apple设备图标 -->
+<link rel="apple-touch-icon" href="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTkyIiBoZWlnaHQ9IjE5MiIgdmlld0JveD0iMCAwIDY0IDY0IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxkZWZzPjxsaW5lYXJHcmFkaWVudCBpZD0iZ3JhZCIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3R5bGU9InN0b3AtY29sb3I6IzY2N2VlYTtzdG9wLW9wYWNpdHk6MSIgLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0eWxlPSJzdG9wLWNvbG9yOiM3NjRiYTI7c3RvcC1vcGFjaXR5OjEiIC8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiByeD0iMTIiIGZpbGw9InVybCgjZ3JhZCkiLz48dGV4dCB4PSIzMiIgeT0iNDIiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIzMiIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IndoaXRlIj5BSTwvdGV4dD48Y2lyY2xlIGN4PSI0OCIgY3k9IjE2IiByPSI0IiBmaWxsPSJ3aGl0ZSIgb3BhY2l0eT0iMC44Ii8+PGNpcmNsZSBjeD0iMTYiIGN5PSI0OCIgcj0iMyIgZmlsbD0id2hpdGUiIG9wYWNpdHk9IjAuNiIvPjwvc3ZnPg==">
+<link rel="apple-touch-icon" href="ailearnhub-apple-touch-icon.png">
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-VYEBQ2KVHH"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-VYEBQ2KVHH');
+</script>
+
+<!-- Plausible Analytics -->
+<script defer data-domain="ailearnhub.app" src="https://plausible.io/js/script.js"></script>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'apple-blue': '#007AFF',
+                        'apple-green': '#34C759',
+                        'apple-orange': '#FF9500',
+                        'apple-red': '#FF3B30',
+                        'apple-purple': '#AF52DE',
+                        'apple-pink': '#FF2D92',
+                        'apple-gray-1': '#F2F2F7',
+                        'apple-gray-2': '#E5E5EA',
+                        'apple-gray-3': '#D1D1D6',
+                        'apple-gray-4': '#C7C7CC',
+                        'apple-gray-5': '#8E8E93',
+                        'apple-gray-6': '#1C1C1E',
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Custom Styles -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        }
+        
+        .glass-effect {
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+        
+        .hover-lift {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .hover-lift:hover {
+            transform: translateY(-4px);
+        }
+        
+        .search-focus:focus {
+            box-shadow: 0 0 0 3px rgba(0, 122, 255, 0.1);
+        }
+        
+        .category-card {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .category-card:hover {
+            transform: translateY(-2px);
+        }
+        
+        .site-card-hover {
+            transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .site-card-hover:hover {
+            transform: scale(1.02);
+        }
+    </style>
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "AI编程学习导航",
+        "description": "专为编程小白打造的AI学习工具集合",
+        "url": "https://aiLearnhub.APP/",
+        "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://aiLearnhub.APP/?search={search_term_string}",
+            "query-input": "required name=search_term_string"
+        }
+    }
+    </script>
+</head>
+
+<body class="bg-gradient-to-br from-apple-gray-1 via-white to-apple-gray-1 min-h-screen">
+    <!-- Language Switcher -->
+    <div class="fixed top-4 right-4 z-50">
+        <div class="glass-effect bg-white/80 rounded-full p-1 shadow-lg border border-apple-gray-2">
+            <button class="lang-btn px-4 py-2 rounded-full text-sm font-medium transition-all duration-200 bg-apple-blue text-white" data-lang="zh">中文</button>
+            <button class="lang-btn px-4 py-2 rounded-full text-sm font-medium transition-all duration-200 text-apple-gray-5 hover:text-apple-blue" data-lang="en">EN</button>
+        </div>
+    </div>
+
+    <!-- Main Container -->
+    <div class="max-w-7xl mx-auto px-4 py-8 sm:px-6 lg:px-8">
+        <!-- Header Section -->
+        <header class="text-center mb-12">
+            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-apple-gray-6 mb-4" data-zh="🚀 AI编程学习导航" data-en="🚀 AI Programming Learning Hub">
+                🚀 AI编程学习导航
+            </h1>
+            <p class="text-lg sm:text-xl text-apple-gray-5 mb-8 max-w-3xl mx-auto" data-zh="专为编程小白打造的AI学习工具集合 - 让AI成为你的编程导师" data-en="AI learning tools collection for programming beginners - Let AI be your coding mentor">
+                专为编程小白打造的AI学习工具集合 - 让AI成为你的编程导师
+            </p>
+            
+            <!-- Search Box -->
+            <div class="max-w-md mx-auto mb-8">
+                <div class="relative">
+                    <input 
+                        type="text" 
+                        id="searchInput"
+                        class="w-full px-6 py-4 bg-white rounded-full border border-apple-gray-3 focus:border-apple-blue focus:outline-none search-focus text-lg"
+                        placeholder="搜索你需要的学习工具..."
+                        data-zh="搜索你需要的学习工具..."
+                        data-en="Search for learning tools..."
+                    >
+                    <svg class="absolute right-6 top-1/2 transform -translate-y-1/2 w-5 h-5 text-apple-gray-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                    </svg>
+                </div>
+            </div>
+        </header>
+
+        <!-- Stats Section -->
+        <section class="glass-effect bg-white/80 rounded-3xl p-6 sm:p-8 mb-12 shadow-lg border border-apple-gray-2">
+            <div class="grid grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="text-center">
+                    <div class="text-3xl sm:text-4xl font-bold text-apple-blue mb-1" id="totalSites">61</div>
+                    <div class="text-sm sm:text-base text-apple-gray-5" data-zh="精选网站" data-en="Selected Sites">精选网站</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-3xl sm:text-4xl font-bold text-apple-green mb-1">6</div>
+                    <div class="text-sm sm:text-base text-apple-gray-5" data-zh="学习分类" data-en="Categories">学习分类</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-3xl sm:text-4xl font-bold text-apple-orange mb-1">100%</div>
+                    <div class="text-sm sm:text-base text-apple-gray-5" data-zh="免费使用" data-en="Free to Use">免费使用</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-3xl sm:text-4xl font-bold text-apple-purple mb-1">24/7</div>
+                    <div class="text-sm sm:text-base text-apple-gray-5" data-zh="随时学习" data-en="Learn Anytime">随时学习</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Categories Section -->
+        <main id="categories" class="space-y-8">
+            <!-- Build Steps Guide -->
+            <section class="category-card glass-effect bg-white/80 rounded-3xl p-6 sm:p-8 shadow-lg border border-apple-gray-2" data-category="build-steps">
+                <h2 class="text-2xl sm:text-3xl font-bold text-apple-gray-6 mb-6 flex items-center gap-3">
+                    <span class="w-8 h-8 bg-gradient-to-r from-apple-orange to-apple-red rounded-lg flex items-center justify-center text-white text-lg">🏗️</span>
+                    <span data-zh="建站步骤指南" data-en="Website Building Guide">建站步骤指南</span>
+                </h2>
+                
+                <!-- Step Cards -->
+                <div class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-4 mb-8">
+                    <a href="https://instantdomainsearch.com/?q=" class="hover-lift block p-6 bg-gradient-to-r from-apple-blue to-apple-purple rounded-2xl text-white" target="_blank">
+                        <div class="flex items-start gap-4">
+                            <span class="w-8 h-8 bg-white text-apple-blue rounded-full flex items-center justify-center font-bold">1</span>
+                            <div>
+                                <h3 class="font-semibold text-lg mb-2" data-zh="域名查询" data-en="Domain Search">域名查询</h3>
+                                <p class="text-sm opacity-90" data-zh="快速查询域名可用性和相关信息" data-en="Quick domain availability check">快速查询域名可用性和相关信息</p>
+                            </div>
+                        </div>
+                    </a>
+                    
+                    <a href="https://spaceship.com" class="hover-lift block p-6 bg-gradient-to-r from-apple-green to-apple-blue rounded-2xl text-white" target="_blank">
+                        <div class="flex items-start gap-4">
+                            <span class="w-8 h-8 bg-white text-apple-green rounded-full flex items-center justify-center font-bold">2</span>
+                            <div>
+                                <h3 class="font-semibold text-lg mb-2" data-zh="域名注册" data-en="Domain Registration">域名注册</h3>
+                                <p class="text-sm opacity-90" data-zh="注册并购买你的专属域名" data-en="Register your exclusive domain">注册并购买你的专属域名</p>
+                            </div>
+                        </div>
+                    </a>
+                    
+                    <a href="https://github.com" class="hover-lift block p-6 bg-gradient-to-r from-apple-purple to-apple-pink rounded-2xl text-white" target="_blank">
+                        <div class="flex items-start gap-4">
+                            <span class="w-8 h-8 bg-white text-apple-purple rounded-full flex items-center justify-center font-bold">3</span>
+                            <div>
+                                <h3 class="font-semibold text-lg mb-2" data-zh="代码&网站托管" data-en="Code & Hosting">代码&网站托管</h3>
+                                <p class="text-sm opacity-90" data-zh="存储代码并部署网站到线上" data-en="Store code and deploy online">存储代码并部署网站到线上</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Domain Tools -->
+                <div class="mb-8">
+                    <h3 class="text-xl font-semibold text-apple-gray-6 mb-4 flex items-center gap-2">
+                        <span class="text-apple-blue">🔍</span>
+                        <span data-zh="域名查询工具" data-en="Domain Search Tools">域名查询工具</span>
+                    </h3>
+                    <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3">
+                        <a href="https://instantdomainsearch.com/?q=" class="site-card-hover block p-4 bg-white rounded-xl border border-apple-gray-3 hover:border-apple-blue hover:shadow-md" target="_blank">
+                            <div class="font-medium text-apple-gray-6 mb-1">InstantDomainSearch</div>
+                            <div class="text-xs text-apple-gray-5" data-zh="即时域名搜索" data-en="Instant domain search">即时域名搜索</div>
+                        </a>
+                        <a href="https://leandomainsearch.com/" class="site-card-hover block p-4 bg-white rounded-xl border border-apple-gray-3 hover:border-apple-blue hover:shadow-md" target="_blank">
+                            <div class="font-medium text-apple-gray-6 mb-1">LeanDomainSearch</div>
+                            <div class="text-xs text-apple-gray-5" data-zh="快速域名搜索" data-en="Fast domain search">快速域名搜索</div>
+                        </a>
+                        <a href="https://query.domains/" class="site-card-hover block p-4 bg-white rounded-xl border border-apple-gray-3 hover:border-apple-blue hover:shadow-md" target="_blank">
+                            <div class="font-medium text-apple-gray-6 mb-1">Query.domains</div>
+                            <div class="text-xs text-apple-gray-5" data-zh="域名可用性查询" data-en="Domain availability">域名可用性查询</div>
+                        </a>
+                        <a href="https://whois.net" class="site-card-hover block p-4 bg-white rounded-xl border border-apple-gray-3 hover:border-apple-blue hover:shadow-md" target="_blank">
+                            <div class="font-medium text-apple-gray-6 mb-1">Whois.net</div>
+                            <div class="text-xs text-apple-gray-5" data-zh="域名信息查询" data-en="Domain info lookup">域名信息查询</div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Domain Registration -->
+                <div class="mb-8">
+                    <h3 class="text-xl font-semibold text-apple-gray-6 mb-4 flex items-center gap-2">
+                        <span class="text-apple-green">📝</span>
+                        <span data-zh="域名注册平台" data-en="Domain Registration Platforms">域名注册平台</span>
+                    </h3>
+                    <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3">
+                        <a href="https://spaceship.com" class="site-card-hover block p-4 bg-white rounded-xl border border-apple-gray-3 hover:border-apple-green hover:shadow-md" target="_blank">
+                            <div class="font-medium text-apple-gray-6 mb-1">Spaceship</div>
+                            <div class="text-xs text-apple-gray-5" data-zh="现代域名注册商" data-en="Modern domain registrar">现代域名注册商</div>
+                        </a>
+                        <a href="https://porkbun.com" class="site-card-hover block p-4 bg-white rounded-xl border border-apple-gray-3 hover:border-apple-green hover:shadow-md" target="_blank">
+                            <div class="font-medium text-apple-gray-6 mb-1">Porkbun</div>
+                            <div class="text-xs text-apple-gray-5" data-zh="实惠域名服务" data-en="Affordable domain service">实惠域名服务</div>
+                        </a>
+                        <a href="https://namecheap.com" class="site-card-hover block p-4 bg-white rounded-xl border border-apple-gray-3 hover:border-apple-green hover:shadow-md" target="_blank">
+                            <div class="font-medium text-apple-gray-6 mb-1">Namecheap</div>
+                            <div class="text-xs text-apple-gray-5" data-zh="知名域名注册商" data-en="Well-known registrar">知名域名注册商</div>
+                        </a>
+                        <a href="https://godaddy.com" class="site-card-hover block p-4 bg-white rounded-xl border border-apple-gray-3 hover:border-apple-green hover:shadow-md" target="_blank">
+                            <div class="font-medium text-apple-gray-6 mb-1">GoDaddy</div>
+                            <div class="text-xs text-apple-gray-5" data-zh="全球知名注册商" data-en="Global domain leader">全球知名注册商</div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Code & Website Hosting -->
+                <div class="mb-8">
+                    <h3 class="text-xl font-semibold text-apple-gray-6 mb-4 flex items-center gap-2">
+                        <span class="text-apple-purple">🚀</span>
+                        <span data-zh="代码&网站托管" data-en="Code & Website Hosting">代码&网站托管</span>
+                    </h3>
+                    <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3">
+                        <a href="https://github.com" class="site-card-hover block p-4 bg-white rounded-xl border border-apple-gray-3 hover:border-apple-purple hover:shadow-md" target="_blank">
+                            <div class="font-medium text-apple-gray-6 mb-1">GitHub</div>
+                            <div class="text-xs text-apple-gray-5" data-zh="代码托管平台" data-en="Code hosting platform">代码托管平台</div>
+                        </a>
+                        <a href="https://pages.cloudflare.com" class="site-card-hover block p-4 bg-white rounded-xl border border-apple-gray-3 hover:border-apple-purple hover:shadow-md" target="_blank">
+                            <div class="font-medium text-apple-gray-6 mb-1">Cloudflare Pages</div>
+                            <div class="text-xs text-apple-gray-5" data-zh="CDN+网站托管" data-en="CDN + Website hosting">CDN+网站托管</div>
+                        </a>
+                        <a href="https://vercel.com" class="site-card-hover block p-4 bg-white rounded-xl border border-apple-gray-3 hover:border-apple-purple hover:shadow-md" target="_blank">
+                            <div class="font-medium text-apple-gray-6 mb-1">Vercel</div>
+                            <div class="text-xs text-apple-gray-5" data-zh="前端应用部署" data-en="Frontend app deployment">前端应用部署</div>
+                        </a>
+                        <a href="https://netlify.com" class="site-card-hover block p-4 bg-white rounded-xl border border-apple-gray-3 hover:border-apple-purple hover:shadow-md" target="_blank">
+                            <div class="font-medium text-apple-gray-6 mb-1">Netlify</div>
+                            <div class="text-xs text-apple-gray-5" data-zh="静态网站托管" data-en="Static site hosting">静态网站托管</div>
+                        </a>
+                        <a href="https://pages.github.com" class="site-card-hover block p-4 bg-white rounded-xl border border-apple-gray-3 hover:border-apple-purple hover:shadow-md" target="_blank">
+                            <div class="font-medium text-apple-gray-6 mb-1">GitHub Pages</div>
+                            <div class="text-xs text-apple-gray-5" data-zh="免费静态托管" data-en="Free static hosting">免费静态托管</div>
+                        </a>
+                        <a href="https://firebase.google.com/products/hosting" class="site-card-hover block p-4 bg-white rounded-xl border border-apple-gray-3 hover:border-apple-purple hover:shadow-md" target="_blank">
+                            <div class="font-medium text-apple-gray-6 mb-1">Firebase Hosting</div>
+                            <div class="text-xs text-apple-gray-5" data-zh="谷歌云托管" data-en="Google cloud hosting">谷歌云托管</div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Analytics Tools -->
+                <div class="mb-8">
+                    <h3 class="text-xl font-semibold text-apple-gray-6 mb-4 flex items-center gap-2">
+                        <span class="text-apple-orange">📊</span>
+                        <span data-zh="数据后台工具" data-en="Analytics Tools">数据后台工具</span>
+                    </h3>
+                    <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3">
+                        <a href="https://search.google.com/search-console" class="site-card-hover block p-4 bg-white rounded-xl border border-apple-gray-3 hover:border-apple-orange hover:shadow-md" target="_blank">
+                            <div class="font-medium text-apple-gray-6 mb-1">Google Search Console</div>
+                            <div class="text-xs text-apple-gray-5" data-zh="搜索引擎优化" data-en="Search engine optimization">搜索引擎优化</div>
+                        </a>
+                        <a href="https://analytics.google.com/analytics/web/#" class="site-card-hover block p-4 bg-white rounded-xl border border-apple-gray-3 hover:border-apple-orange hover:shadow-md" target="_blank">
+                            <div class="font-medium text-apple-gray-6 mb-1">Google Analytics</div>
+                            <div class="text-xs text-apple-gray-5" data-zh="网站流量分析" data-en="Website traffic analysis">网站流量分析</div>
+                        </a>
+                        <a href="https://www.bing.com/webmasters" class="site-card-hover block p-4 bg-white rounded-xl border border-apple-gray-3 hover:border-apple-orange hover:shadow-md" target="_blank">
+                            <div class="font-medium text-apple-gray-6 mb-1">Bing站长工具</div>
+                            <div class="text-xs text-apple-gray-5" data-zh="提交网站到Bing" data-en="Submit site to Bing">提交网站到Bing</div>
+                        </a>
+                        <a href="https://umami.is" class="site-card-hover block p-4 bg-white rounded-xl border border-apple-gray-3 hover:border-apple-orange hover:shadow-md" target="_blank">
+                            <div class="font-medium text-apple-gray-6 mb-1">Umami</div>
+                            <div class="text-xs text-apple-gray-5" data-zh="隐私友好分析" data-en="Privacy-friendly analytics">隐私友好分析</div>
+                        </a>
+                        <a href="https://plausible.io" class="site-card-hover block p-4 bg-white rounded-xl border border-apple-gray-3 hover:border-apple-orange hover:shadow-md" target="_blank">
+                            <div class="font-medium text-apple-gray-6 mb-1">Plausible</div>
+                            <div class="text-xs text-apple-gray-5" data-zh="轻量级分析" data-en="Lightweight analytics">轻量级分析</div>
+                        </a>
+                        <a href="https://www.hotjar.com" class="site-card-hover block p-4 bg-white rounded-xl border border-apple-gray-3 hover:border-apple-orange hover:shadow-md" target="_blank">
+                            <div class="font-medium text-apple-gray-6 mb-1">Hotjar</div>
+                            <div class="text-xs text-apple-gray-5" data-zh="用户行为分析" data-en="User behavior analytics">用户行为分析</div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Competitor Research Tools -->
+                <div class="mb-8">
+                    <h3 class="text-xl font-semibold text-apple-gray-6 mb-4 flex items-center gap-2">
+                        <span class="text-apple-red">🔍</span>
+                        <span data-zh="竞品调研工具" data-en="Competitor Research Tools">竞品调研工具</span>
+                    </h3>
+                    <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3">
+                        <a href="https://aitdk.com" class="site-card-hover block p-4 bg-white rounded-xl border border-apple-gray-3 hover:border-apple-red hover:shadow-md" target="_blank">
+                            <div class="font-medium text-apple-gray-6 mb-1">AITdk</div>
+                            <div class="text-xs text-apple-gray-5" data-zh="查看流量和关键词" data-en="View traffic and keywords">查看流量和关键词</div>
+                        </a>
+                        <a href="https://ahrefs.com/free-seo-tools" class="site-card-hover block p-4 bg-white rounded-xl border border-apple-gray-3 hover:border-apple-red hover:shadow-md" target="_blank">
+                            <div class="font-medium text-apple-gray-6 mb-1">Ahrefs Free Tools</div>
+                            <div class="text-xs text-apple-gray-5" data-zh="免费外链分析" data-en="Free backlink analysis">免费外链分析</div>
+                        </a>
+                        <a href="https://semrush.com" class="site-card-hover block p-4 bg-white rounded-xl border border-apple-gray-3 hover:border-apple-red hover:shadow-md" target="_blank">
+                            <div class="font-medium text-apple-gray-6 mb-1">SEMrush</div>
+                            <div class="text-xs text-apple-gray-5" data-zh="网站关键词分析" data-en="Website keyword analysis">网站关键词分析</div>
+                        </a>
+                        <a href="https://similarweb.com" class="site-card-hover block p-4 bg-white rounded-xl border border-apple-gray-3 hover:border-apple-red hover:shadow-md" target="_blank">
+                            <div class="font-medium text-apple-gray-6 mb-1">SimilarWeb</div>
+                            <div class="text-xs text-apple-gray-5" data-zh="网站流量分析" data-en="Website traffic analysis">网站流量分析</div>
+                        </a>
+                        <a href="https://ubersuggest.com" class="site-card-hover block p-4 bg-white rounded-xl border border-apple-gray-3 hover:border-apple-red hover:shadow-md" target="_blank">
+                            <div class="font-medium text-apple-gray-6 mb-1">Ubersuggest</div>
+                            <div class="text-xs text-apple-gray-5" data-zh="关键词研究工具" data-en="Keyword research tool">关键词研究工具</div>
+                        </a>
+                        <a href="https://www.alexa.com" class="site-card-hover block p-4 bg-white rounded-xl border border-apple-gray-3 hover:border-apple-red hover:shadow-md" target="_blank">
+                            <div class="font-medium text-apple-gray-6 mb-1">Alexa</div>
+                            <div class="text-xs text-apple-gray-5" data-zh="网站排名分析" data-en="Website ranking analysis">网站排名分析</div>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- AI Programming Assistants -->
+            <section class="category-card glass-effect bg-white/80 rounded-3xl p-6 sm:p-8 shadow-lg border border-apple-gray-2" data-category="ai">
+                <h2 class="text-2xl sm:text-3xl font-bold text-apple-gray-6 mb-6 flex items-center gap-3">
+                    <span class="w-8 h-8 bg-gradient-to-r from-apple-blue to-apple-purple rounded-lg flex items-center justify-center text-white text-lg">🤖</span>
+                    <span data-zh="AI编程助手" data-en="AI Programming Assistants">AI编程助手</span>
+                </h2>
+                <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-3">
+                    <a href="https://chat.openai.com" class="site-card-hover block p-4 bg-white rounded-xl border border-apple-gray-3 hover:border-apple-blue hover:shadow-md" target="_blank">
+                        <div class="font-medium text-apple-gray-6 mb-1">ChatGPT</div>
+                        <div class="text-xs text-apple-gray-5" data-zh="最强AI对话助手" data-en="Powerful AI assistant">最强AI对话助手</div>
+                    </a>
+                    <a href="https://claude.ai" class="site-card-hover block p-4 bg-white rounded-xl border border-apple-gray-3 hover:border-apple-blue hover:shadow-md" target="_blank">
+                        <div class="font-medium text-apple-gray-6 mb-1">Claude</div>
+                        <div class="text-xs text-apple-gray-5" data-zh="Anthropic AI助手" data-en="Anthropic AI">Anthropic AI助手</div>
+                    </a>
+                    <a href="https://github.com/features/copilot" class="site-card-hover block p-4 bg-white rounded-xl border border-apple-gray-3 hover:border-apple-blue hover:shadow-md" target="_blank">
+                        <div class="font-medium text-apple-gray-6 mb-1">GitHub Copilot</div>
+                        <div class="text-xs text-apple-gray-5" data-zh="AI代码补全" data-en="AI code completion">AI代码补全</div>
+                    </a>
+                    <a href="https://cursor.sh" class="site-card-hover block p-4 bg-white rounded-xl border border-apple-gray-3 hover:border-apple-blue hover:shadow-md" target="_blank">
+                        <div class="font-medium text-apple-gray-6 mb-1">Cursor</div>
+                        <div class="text-xs text-apple-gray-5" data-zh="AI代码编辑器" data-en="AI code editor">AI代码编辑器</div>
+                    </a>
+                    <a href="https://v0.dev" class="site-card-hover block p-4 bg-white rounded-xl border border-apple-gray-3 hover:border-apple-blue hover:shadow-md" target="_blank">
+                        <div class="font-medium text-apple-gray-6 mb-1">v0.dev</div>
+                        <div class="text-xs text-apple-gray-5" data-zh="AI生成UI组件" data-en="AI UI generator">AI生成UI组件</div>
+                    </a>
+                    <a href="https://bolt.new" class="site-card-hover block p-4 bg-white rounded-xl border border-apple-gray-3 hover:border-apple-blue hover:shadow-md" target="_blank">
+                        <div class="font-medium text-apple-gray-6 mb-1">Bolt</div>
+                        <div class="text-xs text-apple-gray-5" data-zh="AI全栈开发" data-en="AI full-stack dev">AI全栈开发</div>
+                    </a>
+                </div>
+            </section>
+
+            <!-- Online Coding Environment -->
+            <section class="category-card glass-effect bg-white/80 rounded-3xl p-6 sm:p-8 shadow-lg border border-apple-gray-2" data-category="coding">
+                <h2 class="text-2xl sm:text-3xl font-bold text-apple-gray-6 mb-6 flex items-center gap-3">
+                    <span class="w-8 h-8 bg-gradient-to-r from-apple-green to-apple-blue rounded-lg flex items-center justify-center text-white text-lg">💻</span>
+                    <span data-zh="在线编程环境" data-en="Online Coding Environment">在线编程环境</span>
+                </h2>
+                <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-3">
+                    <a href="https://codepen.io" class="site-card-hover block p-4 bg-white rounded-xl border border-apple-gray-3 hover:border-apple-green hover:shadow-md" target="_blank">
+                        <div class="font-medium text-apple-gray-6 mb-1">CodePen</div>
+                        <div class="text-xs text-apple-gray-5" data-zh="前端代码演示" data-en="Frontend playground">前端代码演示</div>
+                    </a>
+                    <a href="https://replit.com" class="site-card-hover block p-4 bg-white rounded-xl border border-apple-gray-3 hover:border-apple-green hover:shadow-md" target="_blank">
+                        <div class="font-medium text-apple-gray-6 mb-1">Replit</div>
+                        <div class="text-xs text-apple-gray-5" data-zh="多语言在线IDE" data-en="Multi-language IDE">多语言在线IDE</div>
+                    </a>
+                    <a href="https://stackblitz.com" class="site-card-hover block p-4 bg-white rounded-xl border border-apple-gray-3 hover:border-apple-green hover:shadow-md" target="_blank">
+                        <div class="font-medium text-apple-gray-6 mb-1">StackBlitz</div>
+                        <div class="text-xs text-apple-gray-5" data-zh="现代web开发" data-en="Modern web dev">现代web开发</div>
+                    </a>
+                    <a href="https://glitch.com" class="site-card-hover block p-4 bg-white rounded-xl border border-apple-gray-3 hover:border-apple-green hover:shadow-md" target="_blank">
+                        <div class="font-medium text-apple-gray-6 mb-1">Glitch</div>
+                        <div class="text-xs text-apple-gray-5" data-zh="快速原型开发" data-en="Rapid prototyping">快速原型开发</div>
+                    </a>
+                    <a href="https://codesandbox.io" class="site-card-hover block p-4 bg-white rounded-xl border border-apple-gray-3 hover:border-apple-green hover:shadow-md" target="_blank">
+                        <div class="font-medium text-apple-gray-6 mb-1">CodeSandbox</div>
+                        <div class="text-xs text-apple-gray-5" data-zh="云端开发环境" data-en="Cloud IDE">云端开发环境</div>
+                    </a>
+                    <a href="https://jsfiddle.net" class="site-card-hover block p-4 bg-white rounded-xl border border-apple-gray-3 hover:border-apple-green hover:shadow-md" target="_blank">
+                        <div class="font-medium text-apple-gray-6 mb-1">JSFiddle</div>
+                        <div class="text-xs text-apple-gray-5" data-zh="JavaScript测试" data-en="JavaScript testing">JavaScript测试</div>
+                    </a>
+                </div>
+            </section>
+
+            <!-- Learning Resources -->
+            <section class="category-card glass-effect bg-white/80 rounded-3xl p-6 sm:p-8 shadow-lg border border-apple-gray-2" data-category="learning">
+                <h2 class="text-2xl sm:text-3xl font-bold text-apple-gray-6 mb-6 flex items-center gap-3">
+                    <span class="w-8 h-8 bg-gradient-to-r from-apple-orange to-apple-red rounded-lg flex items-center justify-center text-white text-lg">📚</span>
+                    <span data-zh="学习资源" data-en="Learning Resources">学习资源</span>
+                </h2>
+                <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-3">
+                    <a href="https://www.freecodecamp.org" class="site-card-hover block p-4 bg-white rounded-xl border border-apple-gray-3 hover:border-apple-orange hover:shadow-md" target="_blank">
+                        <div class="font-medium text-apple-gray-6 mb-1">freeCodeCamp</div>
+                        <div class="text-xs text-apple-gray-5" data-zh="免费编程课程" data-en="Free coding courses">免费编程课程</div>
+                    </a>
+                    <a href="https://developer.mozilla.org" class="site-card-hover block p-4 bg-white rounded-xl border border-apple-gray-3 hover:border-apple-orange hover:shadow-md" target="_blank">
+                        <div class="font-medium text-apple-gray-6 mb-1">MDN Docs</div>
+                        <div class="text-xs text-apple-gray-5" data-zh="权威web文档" data-en="Authoritative docs">权威web文档</div>
+                    </a>
+                    <a href="https://www.w3schools.com" class="site-card-hover block p-4 bg-white rounded-xl border border-apple-gray-3 hover:border-apple-orange hover:shadow-md" target="_blank">
+                        <div class="font-medium text-apple-gray-6 mb-1">W3Schools</div>
+                        <div class="text-xs text-apple-gray-5" data-zh="基础教程" data-en="Basic tutorials">基础教程</div>
+                    </a>
+                    <a href="https://www.runoob.com" class="site-card-hover block p-4 bg-white rounded-xl border border-apple-gray-3 hover:border-apple-orange hover:shadow-md" target="_blank">
+                        <div class="font-medium text-apple-gray-6 mb-1">菜鸟教程</div>
+                        <div class="text-xs text-apple-gray-5" data-zh="中文编程教程" data-en="Chinese tutorials">中文编程教程</div>
+                    </a>
+                    <a href="https://roadmap.sh" class="site-card-hover block p-4 bg-white rounded-xl border border-apple-gray-3 hover:border-apple-orange hover:shadow-md" target="_blank">
+                        <div class="font-medium text-apple-gray-6 mb-1">Developer Roadmaps</div>
+                        <div class="text-xs text-apple-gray-5" data-zh="学习路线图" data-en="Learning roadmaps">学习路线图</div>
+                    </a>
+                    <a href="https://www.codecademy.com" class="site-card-hover block p-4 bg-white rounded-xl border border-apple-gray-3 hover:border-apple-orange hover:shadow-md" target="_blank">
+                        <div class="font-medium text-apple-gray-6 mb-1">Codecademy</div>
+                        <div class="text-xs text-apple-gray-5" data-zh="互动编程课程" data-en="Interactive courses">互动编程课程</div>
+                    </a>
+                </div>
+            </section>
+
+            <!-- Frameworks & Libraries -->
+            <section class="category-card glass-effect bg-white/80 rounded-3xl p-6 sm:p-8 shadow-lg border border-apple-gray-2" data-category="frameworks">
+                <h2 class="text-2xl sm:text-3xl font-bold text-apple-gray-6 mb-6 flex items-center gap-3">
+                    <span class="w-8 h-8 bg-gradient-to-r from-apple-purple to-apple-pink rounded-lg flex items-center justify-center text-white text-lg">⚡</span>
+                    <span data-zh="框架和库" data-en="Frameworks & Libraries">框架和库</span>
+                </h2>
+                <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-3">
+                    <a href="https://react.dev" class="site-card-hover block p-4 bg-white rounded-xl border border-apple-gray-3 hover:border-apple-purple hover:shadow-md" target="_blank">
+                        <div class="font-medium text-apple-gray-6 mb-1">React</div>
+                        <div class="text-xs text-apple-gray-5" data-zh="流行前端框架" data-en="Popular framework">流行前端框架</div>
+                    </a>
+                    <a href="https://vuejs.org" class="site-card-hover block p-4 bg-white rounded-xl border border-apple-gray-3 hover:border-apple-purple hover:shadow-md" target="_blank">
+                        <div class="font-medium text-apple-gray-6 mb-1">Vue.js</div>
+                        <div class="text-xs text-apple-gray-5" data-zh="渐进式框架" data-en="Progressive framework">渐进式框架</div>
+                    </a>
+                    <a href="https://tailwindcss.com" class="site-card-hover block p-4 bg-white rounded-xl border border-apple-gray-3 hover:border-apple-purple hover:shadow-md" target="_blank">
+                        <div class="font-medium text-apple-gray-6 mb-1">Tailwind CSS</div>
+                        <div class="text-xs text-apple-gray-5" data-zh="实用CSS框架" data-en="Utility-first CSS">实用CSS框架</div>
+                    </a>
+                    <a href="https://nextjs.org" class="site-card-hover block p-4 bg-white rounded-xl border border-apple-gray-3 hover:border-apple-purple hover:shadow-md" target="_blank">
+                        <div class="font-medium text-apple-gray-6 mb-1">Next.js</div>
+                        <div class="text-xs text-apple-gray-5" data-zh="React全栈框架" data-en="React full-stack">React全栈框架</div>
+                    </a>
+                    <a href="https://vitejs.dev" class="site-card-hover block p-4 bg-white rounded-xl border border-apple-gray-3 hover:border-apple-purple hover:shadow-md" target="_blank">
+                        <div class="font-medium text-apple-gray-6 mb-1">Vite</div>
+                        <div class="text-xs text-apple-gray-5" data-zh="快速构建工具" data-en="Fast build tool">快速构建工具</div>
+                    </a>
+                    <a href="https://getbootstrap.com" class="site-card-hover block p-4 bg-white rounded-xl border border-apple-gray-3 hover:border-apple-purple hover:shadow-md" target="_blank">
+                        <div class="font-medium text-apple-gray-6 mb-1">Bootstrap</div>
+                        <div class="text-xs text-apple-gray-5" data-zh="响应式CSS框架" data-en="Responsive CSS">响应式CSS框架</div>
+                    </a>
+                </div>
+            </section>
+
+            <!-- Development Tools -->
+            <section class="category-card glass-effect bg-white/80 rounded-3xl p-6 sm:p-8 shadow-lg border border-apple-gray-2" data-category="tools">
+                <h2 class="text-2xl sm:text-3xl font-bold text-apple-gray-6 mb-6 flex items-center gap-3">
+                    <span class="w-8 h-8 bg-gradient-to-r from-apple-pink to-apple-red rounded-lg flex items-center justify-center text-white text-lg">🛠️</span>
+                    <span data-zh="开发工具" data-en="Development Tools">开发工具</span>
+                </h2>
+                <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-3">
+                    <a href="https://github.com" class="site-card-hover block p-4 bg-white rounded-xl border border-apple-gray-3 hover:border-apple-pink hover:shadow-md" target="_blank">
+                        <div class="font-medium text-apple-gray-6 mb-1">GitHub</div>
+                        <div class="text-xs text-apple-gray-5" data-zh="代码托管平台" data-en="Code hosting">代码托管平台</div>
+                    </a>
+                    <a href="https://stackoverflow.com" class="site-card-hover block p-4 bg-white rounded-xl border border-apple-gray-3 hover:border-apple-pink hover:shadow-md" target="_blank">
+                        <div class="font-medium text-apple-gray-6 mb-1">Stack Overflow</div>
+                        <div class="text-xs text-apple-gray-5" data-zh="编程问答社区" data-en="Programming Q&A">编程问答社区</div>
+                    </a>
+                    <a href="https://www.figma.com" class="site-card-hover block p-4 bg-white rounded-xl border border-apple-gray-3 hover:border-apple-pink hover:shadow-md" target="_blank">
+                        <div class="font-medium text-apple-gray-6 mb-1">Figma</div>
+                        <div class="text-xs text-apple-gray-5" data-zh="UI/UX设计工具" data-en="UI/UX design">UI/UX设计工具</div>
+                    </a>
+                    <a href="https://fonts.google.com" class="site-card-hover block p-4 bg-white rounded-xl border border-apple-gray-3 hover:border-apple-pink hover:shadow-md" target="_blank">
+                        <div class="font-medium text-apple-gray-6 mb-1">Google Fonts</div>
+                        <div class="text-xs text-apple-gray-5" data-zh="免费网页字体" data-en="Free web fonts">免费网页字体</div>
+                    </a>
+                    <a href="https://unsplash.com" class="site-card-hover block p-4 bg-white rounded-xl border border-apple-gray-3 hover:border-apple-pink hover:shadow-md" target="_blank">
+                        <div class="font-medium text-apple-gray-6 mb-1">Unsplash</div>
+                        <div class="text-xs text-apple-gray-5" data-zh="免费高质量图片" data-en="Free images">免费高质量图片</div>
+                    </a>
+                    <a href="https://coolors.co" class="site-card-hover block p-4 bg-white rounded-xl border border-apple-gray-3 hover:border-apple-pink hover:shadow-md" target="_blank">
+                        <div class="font-medium text-apple-gray-6 mb-1">Coolors</div>
+                        <div class="text-xs text-apple-gray-5" data-zh="配色方案生成" data-en="Color schemes">配色方案生成</div>
+                    </a>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="text-center mt-16 text-apple-gray-5">
+            <p class="text-lg mb-2" data-zh="💡 专为AI时代的编程学习者打造 | 持续更新中..." data-en="💡 Built for programmers in the AI era | Continuously updating...">
+                💡 专为AI时代的编程学习者打造 | 持续更新中...
+            </p>
+            <p data-zh="建议：结合AI工具学习，事半功倍！" data-en="Tip: Combine AI tools for more efficient learning!">
+                建议：结合AI工具学习，事半功倍！
+            </p>
+        </footer>
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+        // Language switching functionality
+        const langBtns = document.querySelectorAll('.lang-btn');
+        const elementsWithLang = document.querySelectorAll('[data-zh]');
+        
+        let currentLang = localStorage.getItem('language') || 'zh';
+        
+        function initLanguage() {
+            setLanguage(currentLang);
+            updateLangButtons();
+        }
+        
+        function setLanguage(lang) {
+            currentLang = lang;
+            localStorage.setItem('language', lang);
+            
+            elementsWithLang.forEach(element => {
+                const text = element.getAttribute(`data-${lang}`);
+                if (text) {
+                    if (element.tagName === 'INPUT') {
+                        element.placeholder = text;
+                    } else {
+                        element.textContent = text;
+                    }
+                }
+            });
+        }
+        
+        function updateLangButtons() {
+            langBtns.forEach(btn => {
+                btn.classList.remove('bg-apple-blue', 'text-white');
+                btn.classList.add('text-apple-gray-5', 'hover:text-apple-blue');
+                
+                if (btn.getAttribute('data-lang') === currentLang) {
+                    btn.classList.remove('text-apple-gray-5', 'hover:text-apple-blue');
+                    btn.classList.add('bg-apple-blue', 'text-white');
+                }
+            });
+        }
+        
+        langBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const newLang = btn.getAttribute('data-lang');
+                setLanguage(newLang);
+                updateLangButtons();
+            });
+        });
+
+        // Search functionality
+        const searchInput = document.getElementById('searchInput');
+        const allCards = document.querySelectorAll('.site-card-hover');
+
+        searchInput.addEventListener('input', function() {
+            const searchTerm = this.value.toLowerCase();
+            
+            allCards.forEach(card => {
+                const siteName = card.querySelector('div').textContent.toLowerCase();
+                const siteDescElement = card.querySelector('.text-xs');
+                const siteDescZh = siteDescElement.getAttribute('data-zh') || siteDescElement.textContent;
+                const siteDescEn = siteDescElement.getAttribute('data-en') || '';
+                
+                const isMatch = siteName.includes(searchTerm) || 
+                               siteDescZh.toLowerCase().includes(searchTerm) ||
+                               siteDescEn.toLowerCase().includes(searchTerm);
+                
+                card.style.display = isMatch ? 'block' : 'none';
+            });
+
+            // Hide empty categories
+            document.querySelectorAll('[data-category]').forEach(category => {
+                const visibleCards = category.querySelectorAll('.site-card-hover[style="display: block"], .site-card-hover:not([style*="display: none"])');
+                category.style.display = (searchTerm && visibleCards.length === 0) ? 'none' : 'block';
+            });
+        });
+
+        // Counter animation
+        function animateCounter(element, target) {
+            let current = 0;
+            const increment = target / 50;
+            const timer = setInterval(() => {
+                current += increment;
+                if (current >= target) {
+                    current = target;
+                    clearInterval(timer);
+                }
+                element.textContent = Math.floor(current);
+            }, 20);
+        }
+
+        // Initialize
+        document.addEventListener('DOMContentLoaded', () => {
+            initLanguage();
+            
+            // Animate counters
+            const totalSites = document.getElementById('totalSites');
+            animateCounter(totalSites, 61);
+        });
+    </script>
+</body>
+</html>
+Footer
+© 2025 GitHub, Inc.
+Footer navigation
+Terms
+Privacy
+Security
+Status
